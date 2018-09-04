@@ -1,0 +1,27 @@
+{
+  "theme": "~/.powerline_theme.py",
+  "mode": "patched",
+  "segment_data": {
+    "powerline.segments.common.env.user": {
+      "args": {
+        "hide_domain": false
+      }
+    },
+    "powerline.segments.shell.cwd": {
+      "args": {
+        "use_path_separator": true
+      }
+    }
+  },
+  "segments": [
+    "virtual_env",
+    "username",
+    "hostname",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ]
+}
