@@ -1,5 +1,5 @@
 {
-  "theme": "~/.powerline_theme.py",
+  "theme": "~/.config/powerline-shell/powerline_theme.py",
   "mode": "patched",
   "segment_data": {
     "powerline.segments.common.env.user": {
