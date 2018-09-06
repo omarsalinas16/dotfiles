@@ -1,0 +1,96 @@
+{
+	"workbench.colorTheme": "Horizon",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "newUntitledFile",
+
+	"workbench.colorCustomizations": {
+		"terminal.ansiBlack": "#1c1e26",
+		"terminal.ansiBrightBlack": "#d5d8da",
+		"terminal.ansiBlue": "#2e303e",
+		"terminal.ansiBrightBlue": "#4287ff",
+		"terminal.ansiGreen": "#09f7a0",
+		"terminal.ansiBrightGreen": "#09f7a0",
+		"terminal.ansiCyan": "#25b0bc",
+		"terminal.ansiBrightCyan": "#25b0bc",
+		"terminal.ansiRed": "#e9436d",
+		"terminal.ansiBrightRed": "#e9436d",
+		"terminal.ansiMagenta": "#b877db",
+		"terminal.ansiBrightMagenta": "#b877db",
+		"terminal.ansiYellow": "#fab56f",
+		"terminal.ansiBrightYellow": "#fab56f",
+		"terminal.ansiWhite": "#e8f2f6",
+		"terminal.ansiBrightWhite": "#f9fdff",
+		"terminalCursor.background": "#1c1e26",
+		"terminalCursor.foreground": "#e8f2f6"
+	},
+
+	"window.titleBarStyle": "custom",
+
+	"editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	
+	"editor.autoIndent": true,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	
+	"editor.rulers": [ 120 ],
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wrappingIndent": "none",
+	"editor.wordWrapColumn": 120,
+	
+	"editor.renderWhitespace": "all",
+	"editor.minimap.enabled": false,
+	"editor.glyphMargin": false,
+	"editor.fontLigatures": true,
+	
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+
+	"liveServer.settings.donotShowInfoMsg": true,
+
+	"emmet.includeLanguages": {
+		"vue-html": "html",
+		"vue": "html",
+		"javascript": "javascriptreact"
+	},
+	"git.confirmSync": false,
+	"explorer.confirmDelete": false,
+
+	"importCost.javascriptExtensions": [
+		"\\.jsx?$",
+		"\\.vue"
+	],
+	"cSpell.enabledLanguageIds": [
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"go",
+		"handlebars",
+		"html",
+		"jade",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"latex",
+		"less",
+		"markdown",
+		"php",
+		"plaintext",
+		"pub",
+		"python",
+		"restructuredtext",
+		"rust",
+		"scss",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"vue",
+		"yml"
+	],
+	"cSpell.enabled": false,
+	"color-highlight.markerType": "dot-before",
+	"bracketPairColorizer.highlightActiveScope": true,
+	"editor.matchBrackets": false,
+}
