@@ -13,6 +13,8 @@ compinit
 
 # General functions
 
+# colors - display terminal colors
+# usage: colors
 function colors() {
   T='•••'   # The text for the color test
   
@@ -33,6 +35,29 @@ function colors() {
   echo
 }
 
+# ex - archive extractor
+# usage: ex <file>
+function ex () {
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
 use_color=true
 
 # Enable color support of ls
@@ -43,7 +68,7 @@ fi
 # Some aliases
 
 alias l='ls -CF'
-alias ls='ls -a --group-directories-first --color=auto -F'
+alias ls='ls --group-directories-first --color=auto -F'
 alias ll='ls -l --group-directories-first --color=auto -F'
 alias la='ls -la --group-directories-first --color=auto -F'
 
@@ -59,7 +84,7 @@ alias grep='grep --color=tty -d skip'
 # Powerline
 
 function powerline_precmd() {
-    PS1="$(powerline-shell --shell zsh $?)"
+  PS1="$(powerline-shell --shell zsh $?)"
 }
 
 function install_powerline_precmd() {
@@ -72,5 +97,5 @@ function install_powerline_precmd() {
 }
 
 if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
+  install_powerline_precmd
 fi
