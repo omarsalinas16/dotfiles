@@ -1,0 +1,14 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+#		           Window         Border         Separator
+rofi.color-window: argb:F01c1e26, argb:F01c1e26, argb:806C6F93
+
+#                  Background     Foreground     Alt Background Highlight Bg   Highlight Fg
+rofi.color-normal: argb:00435e75, argb:FFe8f2f6, argb:00486883, argb:806C6F93, argb:FFf9fdff
+rofi.color-active: argb:00435e75, argb:D0734375, argb:00486883, argb:806C6F93, argb:D0734375
+rofi.color-urgent: argb:00435e75, argb:D0b9524e, argb:00486883, argb:806C6F93, argb:D0b9524e
+
+rofi.font: "Fira Code" 14
+rofi.hide-scrollbar: true
