@@ -6,6 +6,10 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/omar/.zshrc'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+setopt MENU_COMPLETE
+setopt AUTO_CD
 
 autoload -Uz compinit
 compinit
@@ -67,22 +71,48 @@ fi
 
 # Some aliases
 
-alias l='ls -CF'
-alias ls='ls --group-directories-first --color=auto -F'
-alias ll='ls -l --group-directories-first --color=auto -F'
-alias la='ls -la --group-directories-first --color=auto -F'
+# cd aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias /='cd /'
+alias ~='cd ~'
 
+# ls aliases
+alias ls='ls --group-directories-first --color=auto -F'
+alias ll='ls -lh --group-directories-first --color=auto -F'
+alias la='ls -lAh --group-directories-first --color=auto -F'
+
+# terminal operations aliases
 alias cl='clear'
 alias cp='cp -i'
 alias mv='mv -i'
+alias rm='rm -i'
 alias df='df -h'
+alias md='mkdir -p'
+alias rd='rm -rf -i'
 
+# other tools aliases
+alias ci='code-insiders'
 alias free='free -m'
-
 alias grep='grep --color=tty -d skip'
 
-# Powerline
+# git aliases
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit -v'
+alias gca='git commit -a -v'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status'
+alias gss='git status -s'
 
+# powerline
 function powerline_precmd() {
   PS1="$(powerline-shell --shell zsh $?)"
 }
