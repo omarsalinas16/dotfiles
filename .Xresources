@@ -44,8 +44,15 @@ Xft.lcdfilter: lcddefault
 *.color7:                         #e8f2f6
 *.color15:                        #f9fdff
 
-URxvt.font:                       xft:Fira Code:style=Regular:pixelsize=14:antialias=true:autohint=true
-URxvt.boldFont:                   xft:Fira Code:style=Bold:pixelsize=14:antialias=true:autohint=true
+URxvt.font:                       xft:Fira Code:style=Regular:pixelsize=14:antialias=true:autohint=true, \
+                                  xft:FuraCode Nerd Font:style=Regular:pixelsize=14:antialias=true:autohint=true, \
+                                  xft:Anonymice Powerline:style=Regular:pixelsize=14:antialias=true:autohint=true, \
+                                  xft:PowerlineSymbols:style=Medium:pixelsize=14:antialias=true:autohint=true
+
+URxvt.boldFont:                   xft:Fira Code:style=Bold:pixelsize=14:antialias=true:autohint=true, \
+                                  xft:FuraCode Nerd Font:style=Bold:pixelsize=14:antialias=true:autohint=true, \
+                                  xft:Anonymice Powerline:style=Bold:pixelsize=14:antialias=true:autohint=true
+                                  xft:PowerlineSymbols:style=Medium:pixelsize=14:antialias=true:autohint=true
 
 URxvt.depth:                      32
 URxvt*cursorBlink:                true
