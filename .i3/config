@@ -311,22 +311,22 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# class                 border    backgr.   text      indic.   child_border
-client.focused          #556064 #556064 #80FFF9 #FDF6E3
-client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-client.placeholder      #000000 #0c0c0c #ffffff #000000 
+# class                 border            background text              indic   child_border
+client.focused          $term_color2      #2e303e  $term_foreground  $term_foreground
+client.focused_inactive $term_background  #2e303e  $term_color8      $term_color8
+client.unfocused        $term_background  #2e303e  $term_color8      $term_color8
+client.urgent           $term_color3      #2e303e  $term_color3      $term_color3
+client.placeholder      $term_background  #2e303e  $term_foreground  $term_background
 
-client.background       #2B2C2B
+client.background       $term_background
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-gaps inner 12
-gaps outer -6
+gaps inner 8
+gaps outer -4
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
