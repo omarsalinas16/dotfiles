@@ -6,25 +6,25 @@
 
 ### Terminal stuff
 
-* powerline-shell
+* powerline-shell (from [GitHub](https://github.com/b-ryan/powerline-shell#bash))
 * xfce4-terminal
 * yaourt
 * zsh
 
 ### Environment
 
-* polybar
+* polybar (from AUR)
 * rofi
 
 ### Applications
 
 * chromium
-* visual-studio-code-insiders
+* visual-studio-code-insiders (from AUR)
 
 ### Fonts
 
-* nerd-fonts-fira-code
+* otf-nerd-fonts-fira-code (from AUR)
 * otf-fira-code
-* powerline-fonts
-* ttf-anonymice-powerline-git
-* ttf-yosemite-san-francisco-font-git
+* otf-powerline-symbols-git (from AUR)
+* ttf-anonymice-powerline-git (from AUR)
+* ttf-monaco
