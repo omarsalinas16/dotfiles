@@ -99,7 +99,11 @@ alias free='free -m'
 alias grep='grep --color=tty -d skip'
 
 # git aliases
+alias gi='git init'
+alias gra='git remote add'
+alias grr='git remote remove'
 alias ga='git add'
+alias gaf='git add -f'
 alias gaa='git add --all'
 alias gc='git commit -v'
 alias gca='git commit -a -v'
@@ -107,10 +111,12 @@ alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gd='git diff'
 alias gf='git fetch'
+alias gfa='git fetch --all'
 alias gl='git pull'
 alias gp='git push'
 alias gs='git status'
 alias gss='git status -s'
+alias gtree='git log --oneline --graph --color --all --decorate'
 
 # powerline
 function powerline_precmd() {
