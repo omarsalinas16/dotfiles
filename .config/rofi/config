@@ -10,5 +10,5 @@ rofi.color-normal: argb:00435e75, argb:FFe8f2f6, argb:00486883, argb:806C6F93, a
 rofi.color-active: argb:00435e75, argb:D0734375, argb:00486883, argb:806C6F93, argb:D0734375
 rofi.color-urgent: argb:00435e75, argb:D0b9524e, argb:00486883, argb:806C6F93, argb:D0b9524e
 
-rofi.font: "Fira Code" 14
+rofi.font: "Monaco" 14
 rofi.hide-scrollbar: true

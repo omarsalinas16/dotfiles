@@ -26,6 +26,8 @@ secondary = ${xrdb:color3}
 alert = ${xrdb:color1}
 
 red = ${xrdb:color1}
+green = ${xrdb:color2}
+yellow = ${xrdb:color3}
 blue = ${xrdb:color12}
 
 [bar/example]
@@ -52,14 +54,15 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Monaco:style=Regular:pixelsize=12:antialias=true;1
-font-1 = PowerlineSymbols:pixelsize=12:antialias=true
+font-0 = Monaco:style=Regular:pixelsize=10:antialias=true;1
+font-1 = Font Awesome 5 Free:style=Solid:pixelsize=10:antialias=true
+;font-1 = PowerlineSymbols:pixelsize=12:antialias=true
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3 xwindow
 modules-center = date
-modules-right = alsa pulseaudio memory cpu battery temperature powermenu
+modules-right = alsa memory cpu battery wlan
 
 tray-position = right
 tray-padding = 2
@@ -138,6 +141,12 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
+; Workspace icons
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
@@ -146,23 +155,23 @@ label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background-alt}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon% %index%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %icon% %index%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %icon% %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %icon% %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
@@ -208,7 +217,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.red}
 label = %percentage:2%%
@@ -216,7 +225,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.blue}
 label = %percentage_used%%
@@ -269,11 +278,11 @@ date-alt = %Y-%m-%d
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = "🕑"
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #00000000
 
-label = %date%    %time%
+label = %date%     %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -314,13 +323,13 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = ${colors.green}
+bar-volume-foreground-1 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.green}
+bar-volume-foreground-5 = ${colors.yellow}
+bar-volume-foreground-6 = ${colors.red}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -337,29 +346,35 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.yellow}
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 

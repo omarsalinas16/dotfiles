@@ -31,7 +31,7 @@ ColorCursor=#93a1a1
 ColorBold=#d5d5d8d8dada
 ColorBoldUseDefault=FALSE
 TabActivityColor=#e9e943436d6c
-FontName=FuraCode Nerd Font Mono 12
+FontName=FuraCode Nerd Font Mono 10
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.950000
 
