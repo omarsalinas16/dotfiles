@@ -6,7 +6,8 @@
 
 ### Terminal stuff
 
-* powerline-shell (from [GitHub](https://github.com/b-ryan/powerline-shell#bash))
+* oh-my-zsh (from [GitHub](https://ohmyz.sh/))
+* spaceship-prompt (from [GitHub](https://github.com/denysdovhan/spaceship-prompt/))
 * xfce4-terminal
 * yaourt
 * zsh

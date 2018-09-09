@@ -56,6 +56,7 @@ bindsym $mod+w exec chromium
 bindsym $mod+f exec pcmanfm
 bindsym $mod+Ctrl+f workspace 4; exec i3-sensible-terminal -e ranger
 bindsym $mod+e workspace 3; exec code-insiders
+bindsym $mod+Ctrl+e workspace 3; exec i3-sensible-terminal -e vim
 
 bindsym $mod+F5 exec i3-sensible-terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton

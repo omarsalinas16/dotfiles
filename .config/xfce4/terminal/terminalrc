@@ -1,7 +1,7 @@
 [Configuration]
 ColorForeground=#e8e8f2f2f6f6
 ColorBackground=#1c1c1e1d2626
-ColorPalette=rgb(28,30,38);rgb(233,67,109);rgb(9,247,160);rgb(250,181,111);rgb(46,48,62);rgb(184,119,219);rgb(37,176,188);rgb(232,242,246);rgb(213,216,218);rgb(233,67,109);rgb(9,247,160);rgb(250,181,111);rgb(66,135,255);rgb(184,119,219);rgb(37,176,188);rgb(249,253,255)
+ColorPalette=rgb(28,30,38);rgb(233,67,109);rgb(9,247,160);rgb(250,181,111);rgb(66,135,255);rgb(184,119,219);rgb(37,176,188);rgb(232,242,246);rgb(213,216,218);rgb(233,67,109);rgb(9,247,160);rgb(250,181,111);rgb(66,135,255);rgb(184,119,219);rgb(37,176,188);rgb(249,253,255)
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
