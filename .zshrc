@@ -95,6 +95,7 @@ alias rd='rm -rf -i'
 
 # other tools aliases
 alias ci='code-insiders'
+alias py='python'
 alias free='free -m'
 alias grep='grep --color=tty -d skip'
 
