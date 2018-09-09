@@ -15,6 +15,9 @@ ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ADD_NEWLINE="false"
 SPACESHIP_PROMPT_SEPARATE_LINE="false"
 
+SPACESHIP_PYENV_SYMBOL=" "
+SPACESHIP_VENV_SYMBOL=" "
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -77,6 +80,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+VIRTUAL_ENV_DISABLE_PROMPT="false"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
