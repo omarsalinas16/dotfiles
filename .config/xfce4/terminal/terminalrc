@@ -34,4 +34,5 @@ TabActivityColor=#e9e943436d6c
 FontName=FuraCode Nerd Font Mono 10
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.950000
+TitleMode=TERMINAL_TITLE_REPLACE
 

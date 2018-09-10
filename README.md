@@ -6,7 +6,7 @@
 
 ### Terminal stuff
 
-* oh-my-zsh (from [GitHub](https://ohmyz.sh/))
+* oh-my-zsh (from [Site](https://ohmyz.sh/))
 * spaceship-prompt (from [GitHub](https://github.com/denysdovhan/spaceship-prompt/))
 * xfce4-terminal
 * yaourt
@@ -28,4 +28,5 @@
 * otf-fira-code
 * otf-powerline-symbols-git (from AUR)
 * ttf-anonymice-powerline-git (from AUR)
-* ttf-monaco
+* San Francisco Display (from [GitHub](https://github.com/AppleDesignResources/SanFranciscoFont))
+

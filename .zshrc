@@ -146,7 +146,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias df='df -h'
 alias md='mkdir -p'
-alias rd='rm -rf -i'
+alias rd='rm -rf'
 
 # other tools aliases
 alias ci='code-insiders'
