@@ -54,9 +54,9 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Start Applications
 bindsym $mod+w exec chromium
 bindsym $mod+f exec pcmanfm
-bindsym $mod+Ctrl+f workspace 4; exec i3-sensible-terminal -e ranger
-bindsym $mod+e workspace 3; exec code-insiders
-bindsym $mod+Ctrl+e workspace 3; exec i3-sensible-terminal -e vim
+bindsym $mod+Ctrl+f exec i3-sensible-terminal -e ranger
+bindsym $mod+e exec code-insiders
+bindsym $mod+Ctrl+e exec i3-sensible-terminal -e vim
 
 bindsym $mod+F5 exec i3-sensible-terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -161,7 +161,10 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 assign [class="Chromium"] $ws2
+assign [class="Code - Insiders"] $ws3
+assign [instance="vim"] $ws3
 assign [class="Pcmanfm"] $ws4
+assign [instance="ranger"] $ws4
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 0
